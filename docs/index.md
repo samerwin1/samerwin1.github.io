@@ -9,14 +9,14 @@ tags:
 as part of<br>
 <font size= "8"> Project Name (TBD)</font><br>
 for<br>
-<font size= "5"> Team ### (TBD) </font><br>
+<font size= "5"> Team 103 </font><br>
 
 **Submission: month, DD, YYYY**
 </center>
 
 ## Introduction
 
-This datasheet shows the details of my contribution to (Project Name). The different pages of the datasheet show resources such as the design process, materials, and cost of my own personally developed subsystem. This subsystem is one part of the greater whole system designed by Team ###.
+This datasheet shows the details of my contribution to (Project Name). The different pages of the datasheet show resources such as the design process, materials, and cost of my own personally developed subsystem. This subsystem is one part of the greater whole system designed by Team 103.
 
 
 ### Project Summary
@@ -32,4 +32,3 @@ This datasheet shows the details of my contribution to (Project Name). The diffe
 
 To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
 
-For all the sections
