@@ -5,18 +5,19 @@ tags:
 - tag2
 ---
 <center>
-<font size= "6">(Your Name) Datasheet</font><br>
+<font size= "6"> Seth Merwin Datasheet</font><br>
 as part of<br>
-<font size= "8"> Project Name</font><br>
+<font size= "8"> Project Name (TBD)</font><br>
 for<br>
-<font size= "5"> Team ### </font><br>
+<font size= "5"> Team ### (TBD) </font><br>
 
 **Submission: month, DD, YYYY**
 </center>
 
 ## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
+This datasheet shows the details of my contribution to (Project Name). The different pages of the datasheet show resources such as the design process, materials, and cost of my own personally developed subsystem. This subsystem is one part of the greater whole system designed by Team ###.
+
 
 ### Project Summary
 
