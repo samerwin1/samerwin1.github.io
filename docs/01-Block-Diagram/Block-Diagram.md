@@ -16,5 +16,5 @@ Finally, the block at the bottom of the diagram labeled "connector 3" symbolizes
 ## Distance-Sensing Subsystem Block Diagram 
 
 
-![Distance-Sensing Subsystem](images/Distance Sensors Subsystem Block Diagram.drawio.png)
+![Distance-Sensing Subsystem](Distance_Sensors_Subsystem_Block_Diagram.png)
 
