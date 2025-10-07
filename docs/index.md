@@ -7,7 +7,7 @@ tags:
 <center>
 <font size= "6"> Seth Merwin Datasheet</font><br>
 as part of<br>
-<font size= "8"> Project Name (TBD)</font><br>
+<font size= "8"> Private-Use Door Automation</font><br>
 for<br>
 <font size= "5"> Team 103 </font><br>
 
@@ -16,7 +16,7 @@ for<br>
 
 ## Introduction
 
-This datasheet shows the details of my contribution to (Project Name). The different pages of the datasheet show resources such as the design process, materials, and cost of my own personally developed subsystem. This subsystem is one part of the greater whole system designed by Team 103.
+This datasheet shows the details of my contribution to the project "Private-Use Door Automation". The different pages of the datasheet show resources such as the design process, materials, and cost of my own personally developed subsystem. This subsystem is one part of the greater whole system designed by Team 103.
 
 
 ### Project Summary
