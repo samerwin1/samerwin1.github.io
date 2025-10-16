@@ -1,59 +1,18 @@
 ---
-title: Component Selection Example
+title: Component Selection
 ---
+**Description**
 
-## Examples
-
-### Style 1
-
-> This is the example found in the assignment, uses more html
-
-*Table 1: Example component selection*
+This page shows the process of choosing the hardware for the distance-sensing subsystem of the Private-Use Door Automation project. The table below shows the options that were proposed, each with a list of pros and cons related to the constraints and desired results of the design.
 
 **Distance Sensors**
 
 | **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](HC-SRO4(Ultrasonic).png)<br>Option 1.<br> HC-SR04 Ultrasonic Distance Sensor<br>$6.95/each<br>[link to product](https://www.sparkfun.com/ultrasonic-distance-sensor-3-3v-hc-sr04.html)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
-| ![](GP2Y0A21YK0F(IR).png)<br>Option 2.<br>GP2Y0A21YK0F IR Distance Sensor <br> $14.95/each <br> [Link to product](https://www.adafruit.com/product/164?srsltid=AfmBOoqGMno-iUZhN62IBvV7WDMyy2TnaxIhXy4FnUmK-nh8u-D6jNSM) | \* Outputs a square wave <br>\* Stable over operating temperature <br> \* Direct interface with PSoC (no external circuitry required) range | * More expensive <br>\* Slow shipping speed                                                         |
-| ![](VL53L3CXV0DH1(ToF).png)<br>Option 2.<br>VL53L3CXV0DH/1 FlightSense Optical Sensor<br> $4.95/each <br> [Link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/VL53L3CXV0DH-1/11658305?s=N4IgjCBcoLQBxVAYygMwIYBsDOBTANCAPZQDaIALAJwDsIAugL6OEBMZIAagDICsAzN34BhABqcADABEAEgHoITIA) | \* Outputs a square wave <br>\* Stable over operating temperature <br> \* Direct interface with PSoC (no external circuitry required) range | * More expensive <br>\* Slow shipping speed                                                         |
+| ![](HC-SRO4(Ultrasonic).png)<br>Option 1.<br> HC-SR04 Ultrasonic Distance Sensor<br>$6.95/each<br>[link to product](https://www.sparkfun.com/ultrasonic-distance-sensor-3-3v-hc-sr04.html)                 | \* Affordable<br>\* Great Range(2cm-4m)<br>\* Adequate Accuracy(within ~3mm)<br>\* Not affected by external light<br>\* Linear Response<br>\* Low operating voltage                                               | \* Succeptable to sound in environment<br>\* Slower response due to speed of sound<br>\* Harder to condition pulse output<br>\* Small angular-mount freedom |
+| ![](GP2Y0A21YK0F(IR).png)<br>Option 2.<br>GP2Y0A21YK0F IR Distance Sensor <br> $14.95/each <br> [Link to product](https://www.adafruit.com/product/164?srsltid=AfmBOoqGMno-iUZhN62IBvV7WDMyy2TnaxIhXy4FnUmK-nh8u-D6jNSM) | \* Conditionable analog output <br>\* Better for angular-mounting<br>\* Does not require input from software<br>\* Faster than ultrasonic | \* Most expensive<br>\* Low Range (10cm-80cm)<br>\* Non-Linear Response<br>\* Succeptable to environmental light<br>\* Succeptable to reflective surfaces<br>\* Accuracy not stated in datasheet                                                         |
+| ![](VL53L3CXV0DH1(ToF).png)<br>Option 2.<br>VL53L3CXV0DH/1 FlightSense Optical Sensor<br> $4.95/each <br> [Link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/VL53L3CXV0DH-1/11658305?s=N4IgjCBcoLQBxVAYygMwIYBsDOBTANCAPZQDaIALAJwDsIAugL6OEBMZIAagDICsAzN34BhABqcADABEAEgHoITIA) | \* Cheapest option<br>\* Good range(300m) with high close-up accuracy<br>\* Linear Response<br>\* Class 1 Laser for safety<br>\* Low operating voltage<br>\* Fastest Response<br>\* Best for anglular-mounting<br>\* 25 degree FOV operation for multiple readings at once | \* Internal microchip(daughterboard); invalid for project scope<br>\* High pin-count<br>\* Complicated wiring/integration<br>\* Non-conditionable output<br>\* Low maximum voltage                                                         |
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+**Choice:** Option 1: HC-SR04 Ultrasonic Distance Sensor
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
-
-### Style 2
-
-> Also acceptable, more markdown friendly
-
-**External Clock Module**
-
-1. XC1259TR-ND surface mount crystal
-
-    ![](image1.png)
-
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
-
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
-
-1. CTX936TR-ND surface mount oscillator
-
-    ![](image3.png)
-
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
-
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
-
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
-
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+**Rationale:** The ulrasonic sensor has the best range which is important for detecting people approaching the door, as well as obstacles in its path, as soon as possible. Additionally, the output of the sensor being directly linear to object distance is ideal for simplifying software implementation. The range of operating voltage between 3.3V and 5V ensures that the sensor will continue to work properly even in the case of moderate voltage fluctuation. It is also important that it cannot be affected by environmental lighting conditions or reflectivity of objects. Finally, it is one of the more affordable options which is important since we will need more than one for our design.
