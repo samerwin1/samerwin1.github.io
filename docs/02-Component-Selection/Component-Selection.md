@@ -3,7 +3,7 @@ title: Component Selection
 ---
 **Description**
 
-This page shows the process of choosing the hardware for the distance-sensing subsystem of the Private-Use Door Automation project. The table below shows the options that were proposed, each with a list of pros and cons related to the constraints and desired results of the design.
+This page shows the process of choosing the hardware for the distance-sensing subsystem of the Private-Use Door Automation project. The tables below show the options that were proposed, each with a list of pros and cons related to the constraints and desired results of the design.
 
 **Distance Sensors**
 
