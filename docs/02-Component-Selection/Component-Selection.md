@@ -26,6 +26,6 @@ This page shows the process of choosing the hardware for the distance-sensing su
 | ![](MCP6022(OpAmp).png)<br>Option 2.<br> MCP6022 <br> $1.86/each <br> [Link to product](https://www.digikey.com/en/products/detail/microchip-technology/MCP6022-I-P/417828) | \* Cheapest option <br>\* High GBW<br>\* High slew rate<br>\* Rail to rail with minimal loss<br>\* Low noise<br>\* Low quiescent current | \* Limited load drive<br>\* Lowest operating supply range                                                         |
 | ![](OPA2704(OpAmp).png)<br>Option 2.<br> OPA2704 <br> $6.36/each <br> [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/OPA2704UA-2K5/1572356) | \* Balance of performance and power<br>\* Rail to rail<br>\* Lowest input offset<br>\* Acceptable quiescent current | \* Most expensive option<br>\* Lower speed<br>\* Lower slew rate<br>\* No through-hole packages in stock                                                         |
 
-**Choice:** Option 1: MCP6022
+**Choice:** Option 2: MCP6022
 
 **Rationale:** The MCP6022 seems most capable for handling quick-changing analog signals, has low noise, and should have minimal voltage loss when near the rails of the supply. All of these features make it ideal for amplifying the signal of the ultrasonic distance sensor without corrupting important data.
