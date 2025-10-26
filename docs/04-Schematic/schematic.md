@@ -4,7 +4,7 @@ title: Schematic
 
 ## Overview
 
-This page shows the schematic of the IR Distance Sensors Subsystem. The different sections of the schematic show different "modules" of the whole subsystem. As labeled, the modules include the Power Supply/Voltage Regulator providing power to all components, the 8-pin ribbon wire connecter for connection between subsystems, the filtered and amplified distance sensors, and the microcontroller handling logic and communication.
+This page shows the schematic of the IR Distance-Sensing Subsystem. The different sections of the schematic show different "modules" of the whole subsystem. As labeled, the modules include the Power Supply/Voltage Regulator providing power to all components, the 8-pin ribbon wire connecter for connection between subsystems, the IR emitters, the filtered and amplified photodiodes, and the microcontroller handling logic and communication.
 
 ## Schematic PNG
 
