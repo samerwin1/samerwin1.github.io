@@ -2,21 +2,19 @@
 title: Power Budget
 ---
 
-## Overview
-Write a overview of what you did and why you did a Power Budget.
+## Description
 
-> Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.
+This page shows the power budget for the major components involved in the circuitry of the Distance Sensing Subsystem. The power budget was created to theorize maximum possible current draw from each major electrical component, as well as describe how the power for the system will be supplied. This ensures that the power source/voltage regulator are capable of providing all necessary current to the subsystem without being overloaded.
 
-![budget1](budgetPg1.png){style width:"350" height:"300;"}
+## Power Budget
 
-![budget2](budgetPg2.png){style width:"350" height:"300;"}
+![Power Budget](EGR%20304%20Team%20103%20Individual%20Power%20Budget.pdf)
 
-![budget3](budgetPg3.png){style width:"350" height:"300;"}
 
 ## Conclusions
 
-From the prepare Power Budget, .....
+From the Power Budget, it is clear that the 9V wall supply and 5V linear regulator will be sufficient to safely power the subsytem with extra headroom for minor components (resistors, capacitors, etc).
 
 ## Resouces
 
-The power budget as a PDF download is available [*here*](PowerBudgetExample.pdf), and a Microsoft Excel Sheet [*here*](PowerBudgetExample.xlsx).
+The power budget as a PDF download is available [*here*](EGR%20304%20Team%20103%20Individual%20Power%20Budget.pdf), and a Microsoft Excel Sheet [*here*](EGR%20304%20Team%20103%20Individual%20Power%20Budget.xlsx).
