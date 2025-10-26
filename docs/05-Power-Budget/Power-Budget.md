@@ -8,7 +8,7 @@ This page shows the power budget for the major components involved in the circui
 
 ## Power Budget
 
-![Power Budget](EGR%20304%20Team%20103%20Individual%20Power%20Budget.pdf)
+![Power Budget](EGR%20304%20Team%20103%20Individual%20Power%20Budget.png)
 
 
 ## Conclusions
