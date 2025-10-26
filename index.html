@@ -24,7 +24,7 @@
 
     
       
-        <title>Welcome - EGR 304 Seth Merwin Data Sheet</title>
+        <title>Welcome - EGR 304 Seth Merwin Individual Data Sheet</title>
       
     
     
@@ -104,7 +104,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="EGR 304 Seth Merwin Data Sheet" class="md-header__button md-logo" aria-label="EGR 304 Seth Merwin Data Sheet" data-md-component="logo">
+    <a href="." title="EGR 304 Seth Merwin Individual Data Sheet" class="md-header__button md-logo" aria-label="EGR 304 Seth Merwin Individual Data Sheet" data-md-component="logo">
       
   <img src="static/logo304.svg" alt="logo">
 
@@ -117,7 +117,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            EGR 304 Seth Merwin Data Sheet
+            EGR 304 Seth Merwin Individual Data Sheet
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -360,12 +360,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="EGR 304 Seth Merwin Data Sheet" class="md-nav__button md-logo" aria-label="EGR 304 Seth Merwin Data Sheet" data-md-component="logo">
+    <a href="." title="EGR 304 Seth Merwin Individual Data Sheet" class="md-nav__button md-logo" aria-label="EGR 304 Seth Merwin Individual Data Sheet" data-md-component="logo">
       
   <img src="static/logo304.svg" alt="logo">
 
     </a>
-    EGR 304 Seth Merwin Data Sheet
+    EGR 304 Seth Merwin Individual Data Sheet
   </label>
   
     <div class="md-nav__source">
@@ -840,26 +840,38 @@
   <h1>Welcome</h1>
 
 <p></p><center>
-<font size="6"> Seth Merwin Datasheet</font><br>
+<font size="6"> Seth Merwin Individual Datasheet</font><br>
 as part of<br>
 <font size="8"> Private-Use Door Automation</font><br>
 for<br>
 <font size="5"> Team 103 </font><br><p></p>
-<p><strong>Submission: month, DD, YYYY</strong>
+<p><strong>Submission: month, DD, 2025</strong>
 </p></center><p></p>
 <h2 id="introduction">Introduction</h2>
 <p>This datasheet shows the details of my contribution to the project "Private-Use Door Automation". The different pages of the datasheet show resources such as the design process, materials, and cost of my own personally developed subsystem. This subsystem is one part of the greater whole system designed by Team 103.</p>
 <h3 id="project-summary">Project Summary</h3>
+<p>The goal of "Private-Use Door Automation" is to provide ease of access to consumers through the design of a self-calibrating, automaticly opening and closing door system. While automatic doors are nothing new, the vision is to bring the idea into private homes/properties while also making the technology inexpensive and easy to integrate. More specifically our target consumers are those with disabilities and their caregivers, however we want the product to appeal to anyone desiring efficiency and automation in their home.</p>
+<p>The product will be installable on any lighter-weight swinging interior door. After a simple install, a single button press will open and promptly close the door while multiple sensors collect data along the path. From then on, the door will automatically open any time someone approaches from either side, wait a period of time, and then automatically close. The multiple sensors will be able to detect any obstacles in the way or variations from the typical path and stop the door from becoming hazardous.</p>
+<p>The function of the product is acheived through the combination of four embedded subsystems:</p>
 <ul>
-<li>This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.</li>
-<li>Add context that ties into the link to your <a href="https://embedded-systems-design.github.io/EGR304TeamTemplate/">team report.</a></li>
+<li>Infrared Distance-Sensing Subsystem (focus of this datasheet)</li>
+<li>Motor Subsystem</li>
+<li>Rotary Encoder Subsystem</li>
+<li>Resistive Flex Sensor Subsystem</li>
 </ul>
+<p>These four subsystems each play a vital role and communicate with each other in order to control the final product. Each subsystem was designed by an individual member of the team. To learn more about the other subsystems, how they all work together, and the design process of the whole project, you can visit the <a href="https://egr304-2025-f-103.github.io/">Team Report Website.</a></p>
 <h3 id="my-contribution">My Contribution</h3>
+<p>My personal contribution to the Private-Use Door Automation project is the Infrared Distance-Sensing Subsystem. It uses two IR emitter/detector pairs which are signal conditioned, amplified, and processed through a microcontroller to provide accurate distance measurements. One pair is placed on either side of the door in order to provide a view of its direct path.</p>
+<p>During calibration the door opens 90 degrees and then closes. While this happens, the sensors store distance values of the nearest object in their view at several points along the path. In "standby mode", the sensors tell the motor to open the door once they detect a person approaching. As the door opens, they periodically check their current values with those stored during calibration. Any inequality in these values sends an alert through the system which stops the motor until the obstruction is clear.</p>
+<p>This website was created to provide an understanding of how the subsystem was designed and brought to reality.</p>
 <ul>
-<li>This needs to be updated to reflect a team introduction</li>
-<li>Content should also help an unfamiliar reader navigate to areas of interest. Information like:</li>
+<li>To learn about the hardware components and their connections to the microcontroller, visit the <a href="https://samerwin1.github.io/01-Block-Diagram/Block-Diagram/">"Block Diagram" page.</a></li>
+<li>To understand why specific components were chosen, visit the <a href="https://samerwin1.github.io/02-Component-Selection/Component-Selection/">"Component Selection" page.</a></li>
+<li>To see the list of materials for the subsystem, visit the <a href="https://samerwin1.github.io/03-BOM/BOM/">"BOM" page.</a></li>
+<li>To visualize the electrical flow of the circuitry, visit the <a href="https://samerwin1.github.io/04-Schematic/schematic/">"Schematic" page.</a></li>
+<li>To see a breakdown of each component's current draw and how power is provided to the system, visit the <a href="https://samerwin1.github.io/05-Power-Budget/Power-Budget/">"Power Budget" page.</a></li>
+<li>Finally, to see additional supporting information not included in the main pages, visit the <a href="https://samerwin1.github.io/Appendix/">"Apendix" page.</a></li>
 </ul>
-<p>To review the details listed of the material used to construct the subsection, you can review it in the <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/">"BOM"</a> section of the datasheet.</p>
 
 
 
@@ -922,7 +934,7 @@ for<br>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright © 2025 team-name-here
+      Copyright © Team 103: 2025 Private-Use Door Automation
     </div>
   
   
