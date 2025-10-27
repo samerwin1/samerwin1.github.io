@@ -812,9 +812,9 @@
 <td>* Low power dissipation<br>* Higher dark current<br>* Lower breakdown voltage<br>* Most expensive</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../TSAL6200%28IR%20Emitter%29.png" data-desc-position="bottom"><img alt="" src="../TSAL6200%28IR%20Emitter%29.png"></a><br>Option 2.<br>BPV23NF Silicon PIN Photodiode <br> $0.49/each <br> <a href="https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TSAL6200/1681339?s=N4IgTCBcDaIC4GcCGAbAbGADJkBdAvkA">Link to product</a></td>
-<td>* Least expensive <br>* High radiant power/intensity<br>* Higher peak wavelength<br>* High forward current</td>
-<td>* No focused casing/lense<br>* Lower peak forward current(although with higher duty cycle)* Does not include photodiode</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../QSB34ZR%28Photodiode%29.png" data-desc-position="bottom"><img alt="" src="../QSB34ZR%28Photodiode%29.png"></a><br>Option 2.<br>QSB34ZR Silicon Pin Photodiode <br> $1.14/each <br> <a href="https://www.digikey.com/en/products/detail/onsemi/QSB34ZR/1053818?s=N4IgTCBcDaIIoGUBCBmALALQEogLoF8g">Link to product</a></td>
+<td>* Affordable <br>* High radiant sensitivity<br>* Daylight-blocking filter<br>* Good power dissipation</td>
+<td>* Very wide reception angle<br>* Surface mount package(harder to keep in place when not directly on PCB)<br>* Does not include emitter</td>
 </tr>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../BPV23NF%28Photodiode%29.png" data-desc-position="bottom"><img alt="" src="../BPV23NF%28Photodiode%29.png"></a><br>Option 2.<br>BPV23NF Silicon PIN Photodiode<br> $1.08/each <br> <a href="https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/BPV23NF/1681143">Link to product</a></td>
@@ -823,8 +823,8 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Choice:</strong> Option 2: TSAL6200 IR Emitting Diode</p>
-<p><strong>Rationale:</strong> While it is tempting to use the OPB732 since it is a paired package, our system needs a higher radiant intensity in order to detect objects further away. Additionally, the higher peak wavelength is ideal in order to distinguish the sensor from ambient visible light sources. While the peak forward currents ratings of the other two options are slightly higher, it is ideal that the TSAL6200 is rated for a higher pulse duty cycle at its peak which improves the refresh rate of the system. Lastly, it is very inexpensive.</p>
+<p><strong>Choice:</strong> Option 3: BPV23NF Silicon PIN Photodiode</p>
+<p><strong>Rationale:</strong> As stated for the emitter selection, a two-in-one package would be convinient, but it is more important that the detector is low-noise yet sensitive enough for precise, longer-range use. Between the QSB34ZR and the BPV23NF, they have very similar features/specifications. The main distinction between them is the reception angle (much higher on the QSB34ZR) which is not ideal for focused reflective sensing. Additionally, the surface-mount packaging would make it more difficult to intsall in a wired configuration. In order to reduce the amount of environmental noise and uphold practical installation, the BPV23NF was chosen.</p>
 <p><strong>Operational Amplifier</strong></p>
 <table>
 <thead>
@@ -853,7 +853,7 @@
 </tbody>
 </table>
 <p><strong>Choice:</strong> Option 2: MCP6022</p>
-<p><strong>Rationale:</strong> The MCP6022 seems most capable for handling quick-changing analog signals, has low noise, and should have minimal voltage loss when near the rails of the supply. All of these features make it ideal for amplifying the signal of the ultrasonic distance sensor without corrupting important data.</p>
+<p><strong>Rationale:</strong> The MCP6022 seems most capable for handling quick-changing analog signals, has low noise, and should have minimal voltage loss when near the rails of the supply. All of these features make it ideal for amplifying the signal of the photodiode without corrupting important data.</p>
 
 
 
