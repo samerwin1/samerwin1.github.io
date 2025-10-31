@@ -43,3 +43,30 @@ This page shows the process of choosing the hardware for the distance-sensing su
 **Choice:** Option 2: MCP6022
 
 **Rationale:** The MCP6022 seems most capable for handling quick-changing analog signals, has low noise, and should have minimal voltage loss when near the rails of the supply. All of these features make it ideal for amplifying the signal of the photodiode without corrupting important data.
+
+
+
+**MOSFET**
+
+| **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![](2N7000(MOSFET).png)<br>Option 1.<br> 2N7000 <br>$0.21/each<br>[link to product](https://www.digikey.com/en/products/detail/diotec-semiconductor/2N7000/13164314)                 | \*Least expensive<br>\* Current rating meets goal<br>\* Easy to source                                             | \* Lower current rating than other options<br>\* Higher Rds(on)<br>\* Lower power dissipation |
+| ![](IRLZ44NPBF(MOSFET).png)<br>Option 2.<br> IRLZ44NPBF <br> $1.53/each <br> [Link to product](https://www.digikey.com/en/products/detail/infineon-technologies/IRLZ44NPBF/811808) | \* Affordable <br>\* Very high current rating<br>\* High power dissipation | \* More expensive than other options<br>\* High Input Capacitance                                                         |
+| ![](FQP13N06L(MOSFET).png)<br>Option 2.<br> FQP13N06L <br> $0.68/each <br> [Link to product](https://www.digikey.com/en/products/detail/rochester-electronics-llc/FQP13N06L/13455336) | \* Inexpensive<br>\* Most balanced performance vs cost<br>\* Mid-grade current rating | \* Only sold in bulk<br>\* High shipping fee<br>\* Higher input capacitance                                                       |
+
+**Choice:** Option 2: IRLZ44NPBF
+
+**Rationale:** Since the MOSFET will be used for running high current through the IR Emitters, the high current rating and power dissipation make it ideal. Although it has a higher input capacitance, the lower frequency of the pulse signal does not cause concern in this area. While it is the most expensive option, it is still affordable and nowhere near budget-breaking.
+
+
+**Voltage Regulator**
+
+| **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![](LM7805(Regulator).png)<br>Option 1.<br> LM7805 Linear Voltage Regulator<br>$0.33/each<br>[link to product](https://www.digikey.com/en/products/detail/taejin/lm7805t/22237260)                 | \*Affordable<br>\* Fits project goals<br>\* Already provided                                             | \* Higher voltage dropout<br>\* Lower max current<br>\* Not optimized for efficiency |
+| ![](LM1085IT-5.0(Regulator).png)<br>Option 2.<br> LM1085IT-5.0 Linear Voltage Regulator <br> $2.13/each <br> [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM1085IT-5-0-NOPB/363564) | \* Higher current capability <br>\* Low voltage dropout<br>\* Better regulation characteristics | \* Expensive<br>\* Poor efficiency                                                         |
+| ![](LM2941T(Regulator).png)<br>Option 2.<br> LM2941T Linear Voltage Regulator <br> $1.72/each <br> [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2941T-NOPB/148144) | \* Lowest voltage dropout<br>\* Low noise<br>\* Ranging output voltage| \* Expensive<br>\* Lowest current rating                                                      |
+
+**Choice:** Option 1: LM7805 Linear Voltage Regulator
+
+**Rationale:** The LM7805 meets the subsystem's needs for supply current, input voltage, and output voltage. On top of meeting the requirements, it has already been provided and therefore there is no reason to order and implement a different option.
