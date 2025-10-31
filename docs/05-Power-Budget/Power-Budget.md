@@ -13,7 +13,7 @@ This page shows the power budget for the major components involved in the circui
 
 ## Conclusions
 
-From the Power Budget, it is clear that the 9V wall supply and 5V linear regulator will be sufficient to safely power the subsytem with extra headroom for minor components (resistors, capacitors, etc).
+From the Power Budget, it is clear that the 12V wall supply and 5V linear regulator will be sufficient to safely power the subsytem with extra headroom for minor components (resistors, capacitors, etc). It also helps in deciding what size fuse to use at the power supply of the subsystem. Since the maximum current draw of all components in the subsystem is just over 1 Amp, it makes sense to use the next size up in fuse options: 1.25 Amps.
 
 ## Resouces
 
