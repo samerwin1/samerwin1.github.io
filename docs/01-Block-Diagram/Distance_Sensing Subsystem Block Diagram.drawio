@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.9">
   <diagram name="Page-1" id="hgV2WE_vq-kMDefhnzd4">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -193,8 +193,8 @@
         <mxCell id="6swBmumY7SecbSZGO2hE-60" value="analog&lt;div&gt;(0-5V, 1 Pin)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fillColor=default;" vertex="1" parent="6swBmumY7SecbSZGO2hE-1">
           <mxGeometry x="373.28" y="400" width="58.78" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="PTyXejWfiaGW0Db937WY-3" value="&lt;div style=&quot;&quot;&gt;PWM&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=default;" vertex="1" parent="6swBmumY7SecbSZGO2hE-1">
-          <mxGeometry x="360.9" y="170" width="79.11" height="103.16" as="geometry" />
+        <mxCell id="PTyXejWfiaGW0Db937WY-3" value="&lt;div style=&quot;&quot;&gt;PWM2&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=default;" vertex="1" parent="6swBmumY7SecbSZGO2hE-1">
+          <mxGeometry x="360.9" y="170" width="79.11" height="50" as="geometry" />
         </mxCell>
         <mxCell id="25be8MMj-iHBaYmQKNuc-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6swBmumY7SecbSZGO2hE-1" source="PTyXejWfiaGW0Db937WY-1" target="25be8MMj-iHBaYmQKNuc-4">
           <mxGeometry relative="1" as="geometry" />
@@ -210,6 +210,9 @@
         </mxCell>
         <mxCell id="25be8MMj-iHBaYmQKNuc-4" value="MOSFET&lt;div&gt;Infineon&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre; white-space: normal;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;IRLZ44NPBF&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=default;" vertex="1" parent="6swBmumY7SecbSZGO2hE-1">
           <mxGeometry x="510" y="90" width="80" height="63.68" as="geometry" />
+        </mxCell>
+        <mxCell id="S4t-4gd13mp19cAyUsKr-2" value="&lt;div style=&quot;&quot;&gt;PWM3&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=default;" vertex="1" parent="6swBmumY7SecbSZGO2hE-1">
+          <mxGeometry x="360.9" y="221.57999999999998" width="79.11" height="50" as="geometry" />
         </mxCell>
         <mxCell id="6swBmumY7SecbSZGO2hE-44" value="&lt;div style=&quot;font-size: 16px&quot;&gt;&lt;b style=&quot;font-size: 16px&quot;&gt;Block Diagram -- Team 103: Private-Use Door Automation&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px&quot;&gt;&lt;i&gt;&lt;b&gt;Seth Merwin&lt;/b&gt;&lt;/i&gt;, Isaac Smith,&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Lakshanand Sugumar, Christo Joseph&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="520" y="100" width="660" height="60" as="geometry" />
@@ -273,6 +276,9 @@
         </mxCell>
         <mxCell id="25be8MMj-iHBaYmQKNuc-77" value="digital/parallel&lt;div&gt;(5V, 1 Pin)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fillColor=default;fillStyle=auto;" vertex="1" parent="1">
           <mxGeometry x="1030" y="513.68" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S4t-4gd13mp19cAyUsKr-1" value="&lt;b&gt;Seth: Distance-Sensing Subsystem&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="741.22" y="170" width="220" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
