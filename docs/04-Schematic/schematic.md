@@ -8,7 +8,7 @@ This page shows the electrical schematic of the IR Distance-Sensing Subsystem. T
 
 ## Schematic PNG
 
-![schematic](IndividualSubsystemDesign.png){style width:"350" height:"300;"}
+![schematic](IndividualSubsystemSchematic.png){style width:"350" height:"300;"}
 
 
 
