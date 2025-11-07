@@ -22,3 +22,5 @@ This image shows the bottom layer of the PCB.
 ## Resouces
 
 The PCB front and back images as a PDF download are available [*here*](IndividualSubsystemDesignPCB.pdf), and a Zip folder of the ECAD project [*here*](EGR304-IndividualSubystemDesign.zip).
+
+The Gerber files used for manufacturing of the PCB are available [*here*](Merwin.Seth.103.zip).
