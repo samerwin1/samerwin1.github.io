@@ -48,4 +48,5 @@ This website was created to provide an understanding of how the subsystem was de
 * To see the list of materials for the subsystem, visit the ["BOM" page.](https://samerwin1.github.io/03-BOM/BOM/)
 * To visualize the electrical flow of the circuitry, visit the ["Schematic" page.](https://samerwin1.github.io/04-Schematic/schematic/)
 * To see a breakdown of each component's current draw and how power is provided to the system, visit the ["Power Budget" page.](https://samerwin1.github.io/05-Power-Budget/Power-Budget/)
+* To see the design of the PCB(Printed Circuit Board), visit the ["PCB Design" page.](https://samerwin1.github.io/06-PCB-Design/PCB-Design/)
 * Finally, to see additional supporting information not included in the main pages, visit the ["Apendix" page.](https://samerwin1.github.io/Appendix/)
