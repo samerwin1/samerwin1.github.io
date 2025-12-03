@@ -8,13 +8,13 @@ This page shows the electrical schematic of the IR Distance-Sensing Subsystem. T
 
 ## Schematic PNG
 
-![schematic](IndividualSubsystemSchematic.png){style width:"350" height:"300;"}
+![schematic](IndividualSubsystemSchematicV2.png){style width:"350" height:"300;"}
 
 
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](EGR304-IndividualSubystemDesign.pdf), and the Zip folder of the project [*here*](EGR304-IndividualSubystemDesign.zip).
+The schematic as a PDF download is available [*here*](EGR304-IndividualSubystemDesignV2.pdf), and the Zip folder of the project [*here*](EGR304-IndividualSubystemDesign.zip).
 
 ## Explanation
 
