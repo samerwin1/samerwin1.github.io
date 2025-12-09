@@ -12,10 +12,10 @@
         <link rel="canonical" href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/">
       
       
-        <link rel="prev" href="../07-Resources/Resources/">
+        <link rel="prev" href="../08-Resources/Resources/">
       
       
-        <link rel="next" href="another-subfile/">
+        <link rel="next" href="Substituted-Block-Diagram/">
       
       
       <link rel="icon" href="../static/logo304.png">
@@ -88,6 +88,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#changes-to-subsystem-hardware" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -334,12 +339,32 @@
     
     
       <li class="md-tabs__item">
-        <a href="../07-Resources/Resources/" class="md-tabs__link">
+        <a href="../07-Hardware-V2.0/Hardware-V2.0/" class="md-tabs__link">
           
   
     
   
-  07 Resources
+  07 Hardware V2.0
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../08-Resources/Resources/" class="md-tabs__link">
+          
+  
+    
+  
+  08 Resources
 
         </a>
       </li>
@@ -742,11 +767,57 @@
         
   
   
-    <a href="../07-Resources/Resources/" class="md-nav__link">
+    <a href="../07-Hardware-V2.0/Hardware-V2.0/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
-    07 Resources
+    07 Hardware V2.0
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../08-Resources/Resources/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    08 Resources
   </span>
   
 
@@ -780,10 +851,6 @@
       
         
       
-        
-      
-        
-      
     
     
       
@@ -799,7 +866,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
         
           
           
@@ -815,14 +882,14 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_9" id="__nav_9_label" tabindex="">
+              <label class="md-nav__link md-nav__link--active" for="__nav_10" id="__nav_10_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             Appendix
           </label>
@@ -837,11 +904,11 @@
   
   
     <li class="md-nav__item">
-      <a href="another-subfile/" class="md-nav__link">
+      <a href="Substituted-Block-Diagram/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Appendix - Another Subfile
+    Substituted Block Diagram
   </span>
   
 
@@ -858,53 +925,11 @@
   
   
     <li class="md-nav__item">
-      <a href="basic-markdown-examples/" class="md-nav__link">
+      <a href="Substituted-Schematic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Appendix - Basic Markdown Examples
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="charts/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Appendix - Charts Example
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="esp-32-table/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Appendix - Example Controller Table for the ESP32
+    Substituted Schematic
   </span>
   
 
@@ -939,6 +964,74 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#changes-to-subsystem-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changes to Subsystem Hardware
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Changes to Subsystem Hardware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#emitterdetector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emitter/Detector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational-amplifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operational Amplifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mosfetspwm" class="md-nav__link">
+    <span class="md-ellipsis">
+      MOSFETs/PWM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resistor-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resistor Values
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -962,7 +1055,18 @@
 
   <h1>Appendix - Main Page</h1>
 
-<p>The Appendix is where supporting information goes that is not in the main body.</p>
+<h2 id="changes-to-subsystem-hardware"><strong>Changes to Subsystem Hardware</strong></h2>
+<p>This appendix shows the block diagram and schematic used for testing the subsystem in place of the selected components which did not arrive in time. The changes are explained below:</p>
+<h3 id="emitterdetector"><strong>Emitter/Detector</strong></h3>
+<p>Instead of the chosen emitter and detector, the <a href="https://www.digikey.com/en/products/detail/tt-electronics-optek-technology/OPB732/1637069">OPB732 Reflective Switch</a> (shown in the Component Selection page) was used.</p>
+<h3 id="operational-amplifier"><strong>Operational Amplifier</strong></h3>
+<p>Instead of the chosen operational amplifier, the <a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060">MCP6004</a> was used.</p>
+<h3 id="mosfetspwm"><strong>MOSFETs/PWM</strong></h3>
+<p>Since the MOSFETs were not obtained and there was so little time, I decided to remove the Pulse Width Modulation functionality from the emmiters and have them constantly on instead. This meant that they could not be powered by as strong of a current and therefore the range of distance sensing was reduced.</p>
+<h3 id="resistor-values"><strong>Resistor Values</strong></h3>
+<p>Finally, many resistor values had to be adjusted inside the amplification stage to provide proper voltage/current to the substituted components.</p>
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+<p>While it was quite upsetting to be setback and unable to create the subsystem the way I wanted it, it was a success to be able to change things at the last minute and still show that my programming worked. In the end, I had a distance-sensing subsystem that could provide the basic functionality that was required. Additionally, it was able to connect to my teammates subsystems to function as a whole. This leads me to believe that if I was able to finish my project using the components I selected, it would be even more succesful with even greater range.</p>
 
 
 
@@ -1001,7 +1105,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../07-Resources/Resources/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Resources">
+          <a href="../08-Resources/Resources/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Resources">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
@@ -1018,13 +1122,13 @@
         
         
           
-          <a href="another-subfile/" class="md-footer__link md-footer__link--next" aria-label="Next: Appendix - Another Subfile">
+          <a href="Substituted-Block-Diagram/" class="md-footer__link md-footer__link--next" aria-label="Next: Substituted Block Diagram">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Appendix - Another Subfile
+                Substituted Block Diagram
               </div>
             </div>
             <div class="md-footer__button md-icon">
