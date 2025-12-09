@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#description" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -548,6 +553,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Component Selection
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -557,6 +573,101 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#emitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emitter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational-amplifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operational Amplifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mosfet" class="md-nav__link">
+    <span class="md-ellipsis">
+      MOSFET
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voltage-regulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voltage Regulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mcc-configuration-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      MCC Configuration Table
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -874,6 +985,92 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#emitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emitter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational-amplifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operational Amplifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mosfet" class="md-nav__link">
+    <span class="md-ellipsis">
+      MOSFET
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voltage-regulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voltage Regulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mcc-configuration-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      MCC Configuration Table
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -897,9 +1094,9 @@
 
   <h1>Component Selection</h1>
 
-<p><strong>Description</strong></p>
+<h2 id="description"><strong>Description</strong></h2>
 <p>This page shows the process of choosing the hardware for the distance-sensing subsystem of the Private-Use Door Automation project. The tables below show the options that were proposed, each with a list of pros and cons related to the constraints and desired results of the design.</p>
-<p><strong>Emitter</strong></p>
+<h3 id="emitter"><strong>Emitter</strong></h3>
 <table>
 <thead>
 <tr>
@@ -928,7 +1125,7 @@
 </table>
 <p><strong>Choice:</strong> Option 2: TSAL6200 IR Emitting Diode</p>
 <p><strong>Rationale:</strong> While it is tempting to use the OPB732 since it is a paired package, our system needs a higher radiant intensity in order to detect objects further away. Additionally, the higher peak wavelength is ideal in order to distinguish the sensor from ambient visible light sources. While the peak forward currents ratings of the other two options are slightly higher, it is ideal that the TSAL6200 is rated for a higher pulse duty cycle at its peak which improves the refresh rate of the system. Lastly, it is very inexpensive.</p>
-<p><strong>Detector</strong></p>
+<h3 id="detector"><strong>Detector</strong></h3>
 <table>
 <thead>
 <tr>
@@ -957,7 +1154,7 @@
 </table>
 <p><strong>Choice:</strong> Option 3: BPV23NF Silicon PIN Photodiode</p>
 <p><strong>Rationale:</strong> As stated for the emitter selection, a two-in-one package would be convinient, but it is more important that the detector is low-noise yet sensitive enough for precise, longer-range use. Between the QSB34ZR and the BPV23NF, they have very similar features/specifications. The main distinction between them is the reception angle (much higher on the QSB34ZR) which is not ideal for focused reflective sensing. Additionally, the surface-mount packaging would make it more difficult to intsall in a wired configuration. In order to reduce the amount of environmental noise and uphold practical installation, the BPV23NF was chosen.</p>
-<p><strong>Operational Amplifier</strong></p>
+<h3 id="operational-amplifier"><strong>Operational Amplifier</strong></h3>
 <table>
 <thead>
 <tr>
@@ -986,7 +1183,7 @@
 </table>
 <p><strong>Choice:</strong> Option 2: MCP6022</p>
 <p><strong>Rationale:</strong> The MCP6022 seems most capable for handling quick-changing analog signals, has low noise, and should have minimal voltage loss when near the rails of the supply. All of these features make it ideal for amplifying the signal of the photodiode without corrupting important data.</p>
-<p><strong>MOSFET</strong></p>
+<h3 id="mosfet"><strong>MOSFET</strong></h3>
 <table>
 <thead>
 <tr>
@@ -1015,7 +1212,7 @@
 </table>
 <p><strong>Choice:</strong> Option 2: IRLZ44NPBF</p>
 <p><strong>Rationale:</strong> Since the MOSFET will be used for running high current through the IR Emitters, the high current rating and power dissipation make it ideal. Although it has a higher input capacitance, the lower frequency of the pulse signal does not cause concern in this area. While it is the most expensive option, it is still affordable and nowhere near budget-breaking.</p>
-<p><strong>Voltage Regulator</strong></p>
+<h3 id="voltage-regulator"><strong>Voltage Regulator</strong></h3>
 <table>
 <thead>
 <tr>
@@ -1044,6 +1241,40 @@
 </table>
 <p><strong>Choice:</strong> Option 1: LM7805 Linear Voltage Regulator</p>
 <p><strong>Rationale:</strong> The LM7805 meets the subsystem's needs for supply current, input voltage, and output voltage. On top of meeting the requirements, it has already been provided and therefore there is no reason to order and implement a different option.</p>
+<h2 id="summary-table"><strong>Summary Table</strong></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Component Type</strong></th>
+<th><strong>Selection</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IR Emitter</strong></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../TSAL6200%28IR%20Emitter%29.png" data-desc-position="bottom"><img alt="" src="../TSAL6200%28IR%20Emitter%29.png"></a><br>Option 2.<br>TSAL6200 IR Emitting Diode <br> $0.49/each <br> <a href="https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TSAL6200/1681339?s=N4IgTCBcDaIC4GcCGAbAbGADJkBdAvkA">Link to product</a></td>
+</tr>
+<tr>
+<td><strong>IR Detector</strong></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../BPV23NF%28Photodiode%29.png" data-desc-position="bottom"><img alt="" src="../BPV23NF%28Photodiode%29.png"></a><br>Option 2.<br>BPV23NF Silicon PIN Photodiode<br> $1.08/each <br> <a href="https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/BPV23NF/1681143">Link to product</a></td>
+</tr>
+<tr>
+<td><strong>Operational Amplifier</strong></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MCP6022%28OpAmp%29.png" data-desc-position="bottom"><img alt="" src="../MCP6022%28OpAmp%29.png"></a><br>Option 2.<br> MCP6022 <br> $1.86/each <br> <a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP6022-I-P/417828">Link to product</a></td>
+</tr>
+<tr>
+<td><strong>MOSFET</strong></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../IRLZ44NPBF%28MOSFET%29.png" data-desc-position="bottom"><img alt="" src="../IRLZ44NPBF%28MOSFET%29.png"></a><br>Option 2.<br> IRLZ44NPBF <br> $1.53/each <br> <a href="https://www.digikey.com/en/products/detail/infineon-technologies/IRLZ44NPBF/811808">Link to product</a></td>
+</tr>
+<tr>
+<td><strong>Voltage Regulator</strong></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../LM7805%28Regulator%29.png" data-desc-position="bottom"><img alt="" src="../LM7805%28Regulator%29.png"></a><br>Option 1.<br> LM7805 Linear Voltage Regulator<br>$0.33/each<br><a href="https://www.digikey.com/en/products/detail/taejin/lm7805t/22237260">link to product</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="mcc-configuration-table"><strong>MCC Configuration Table</strong></h2>
+<p>This table shows the MCC pin setup inside MPLAB X IDE software used to program the microcontroller.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../DistanceSensingSubsystemMCCPins.png" data-desc-position="bottom"><img alt="MCC Pin Setup" src="../DistanceSensingSubsystemMCCPins.png"></a></p>
 
 
 
