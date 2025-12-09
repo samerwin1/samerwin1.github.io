@@ -1,5 +1,5 @@
 ---
-title: Microcontroller Code/Resources
+title: Resources
 ---
 
 ## Description
