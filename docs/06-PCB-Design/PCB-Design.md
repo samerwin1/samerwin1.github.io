@@ -8,16 +8,25 @@ This page shows the design of the Printed Circuit Board for the Distance-Sensing
 
 ## PCB Top Side
 
-This image shows the top layer of the PCB.
+This image shows the top layer of the PCB ECAD design.
 
 ![PCBFront](IndividualSubsystemPCB_Front.png)
 
+This image shows the top side of the raw physical PCB.
+
+![PCBTop](DistanceSensingSubsystemPCBTop.png)
 
 ## PCB Bottom Side
 
-This image shows the bottom layer of the PCB.
+This image shows the bottom layer of the PCB ECAD design.
 
 ![PCBBack](IndividualSubsystemPCB_Back.png)
+
+This image shows the bottom side of the raw physical PCB.
+
+![PCBBottom](DistanceSensingSubsystemPCBBottom.png)
+
+**Note:** Unfortunately due to class-wide setbacks, as well as me personally not receiving my components until it was too late, I was unable to get to the stage of soldering components to my PCB.
 
 ## Resouces
 
