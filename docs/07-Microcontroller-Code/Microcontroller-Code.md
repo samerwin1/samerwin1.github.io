@@ -1,5 +1,5 @@
 ---
-title: Microcontroller Code
+title: Microcontroller Code/Resources
 ---
 
 ## Description
@@ -8,9 +8,9 @@ This page provides the code written and used to program the PIC18F57Q43-CNANO mi
 
 ## Inividual Verification Code
 
-[*This*](EmitterDetector.zip) is the code used to verify functionality of the distance-sensing subsystem while on its own (not connected to the other subsystems). It uses a button to simulate input from the rotary system during calibration, door opening, and door closing.
+[*This zip file*](EmitterDetector.zip) contains the code used to verify functionality of the distance-sensing subsystem while on its own (not connected to the other subsystems). It uses a button to simulate input from the rotary system during calibration, door opening, and door closing.
 
 
 ## Final Program Code
 
-[*This*](DistanceSensingSubsystem.zip) is the final version of the code used in the product (connected to and communicating with the other subsystems).
+[*This zip file*](DistanceSensingSubsystem.zip) contains the final version of the code used in the product (connected to and communicating with the other subsystems).

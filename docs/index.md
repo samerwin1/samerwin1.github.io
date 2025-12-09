@@ -49,5 +49,5 @@ This website was created to provide an understanding of how the subsystem was de
 * To visualize the electrical flow of the circuitry, visit the ["Schematic" page.](https://samerwin1.github.io/04-Schematic/schematic/)
 * To see a breakdown of each component's current draw and how power is provided to the system, visit the ["Power Budget" page.](https://samerwin1.github.io/05-Power-Budget/Power-Budget/)
 * To see the design of the PCB(Printed Circuit Board), visit the ["PCB Design" page.](https://samerwin1.github.io/06-PCB-Design/PCB-Design/)
-* To access the code written to program the subsystem, visit the ["Microcontroller Code" page.](https://samerwin1.github.io/07-Microcontroller-Code/Microcontroller-Code/)
+* To access the code written to program the subsystem, visit the ["Microcontroller Code/Resources" page.](https://samerwin1.github.io/07-Microcontroller-Code/Microcontroller-Code/)
 * Finally, to see additional supporting information not included in the main pages, visit the ["Apendix" page.](https://samerwin1.github.io/Appendix/)
