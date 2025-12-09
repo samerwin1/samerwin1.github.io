@@ -1,12 +1,12 @@
 ---
 title: Component Selection
 ---
-**Description**
+## **Description**
 
 This page shows the process of choosing the hardware for the distance-sensing subsystem of the Private-Use Door Automation project. The tables below show the options that were proposed, each with a list of pros and cons related to the constraints and desired results of the design.
 
 
-**Emitter**
+### **Emitter**
 
 | **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -19,7 +19,7 @@ This page shows the process of choosing the hardware for the distance-sensing su
 **Rationale:** While it is tempting to use the OPB732 since it is a paired package, our system needs a higher radiant intensity in order to detect objects further away. Additionally, the higher peak wavelength is ideal in order to distinguish the sensor from ambient visible light sources. While the peak forward currents ratings of the other two options are slightly higher, it is ideal that the TSAL6200 is rated for a higher pulse duty cycle at its peak which improves the refresh rate of the system. Lastly, it is very inexpensive.
 
 
-**Detector**
+### **Detector**
 
 | **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -32,7 +32,7 @@ This page shows the process of choosing the hardware for the distance-sensing su
 **Rationale:** As stated for the emitter selection, a two-in-one package would be convinient, but it is more important that the detector is low-noise yet sensitive enough for precise, longer-range use. Between the QSB34ZR and the BPV23NF, they have very similar features/specifications. The main distinction between them is the reception angle (much higher on the QSB34ZR) which is not ideal for focused reflective sensing. Additionally, the surface-mount packaging would make it more difficult to intsall in a wired configuration. In order to reduce the amount of environmental noise and uphold practical installation, the BPV23NF was chosen.
 
 
-**Operational Amplifier**
+### **Operational Amplifier**
 
 | **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -46,7 +46,7 @@ This page shows the process of choosing the hardware for the distance-sensing su
 
 
 
-**MOSFET**
+### **MOSFET**
 
 | **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -59,7 +59,7 @@ This page shows the process of choosing the hardware for the distance-sensing su
 **Rationale:** Since the MOSFET will be used for running high current through the IR Emitters, the high current rating and power dissipation make it ideal. Although it has a higher input capacitance, the lower frequency of the pulse signal does not cause concern in this area. While it is the most expensive option, it is still affordable and nowhere near budget-breaking.
 
 
-**Voltage Regulator**
+### **Voltage Regulator**
 
 | **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -70,3 +70,19 @@ This page shows the process of choosing the hardware for the distance-sensing su
 **Choice:** Option 1: LM7805 Linear Voltage Regulator
 
 **Rationale:** The LM7805 meets the subsystem's needs for supply current, input voltage, and output voltage. On top of meeting the requirements, it has already been provided and therefore there is no reason to order and implement a different option.
+
+## **Summary Table**
+
+| **Component Type**                                                                                                                                                                                      | **Selection**                                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **IR Emitter**                 | ![](TSAL6200(IR%20Emitter).png)<br>Option 2.<br>TSAL6200 IR Emitting Diode <br> $0.49/each <br> [Link to product](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TSAL6200/1681339?s=N4IgTCBcDaIC4GcCGAbAbGADJkBdAvkA)                                             |
+| **IR Detector**                | ![](BPV23NF(Photodiode).png)<br>Option 2.<br>BPV23NF Silicon PIN Photodiode<br> $1.08/each <br> [Link to product](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/BPV23NF/1681143)                                             |
+| **Operational Amplifier**      | ![](MCP6022(OpAmp).png)<br>Option 2.<br> MCP6022 <br> $1.86/each <br> [Link to product](https://www.digikey.com/en/products/detail/microchip-technology/MCP6022-I-P/417828)                                             |
+| **MOSFET**                     | ![](IRLZ44NPBF(MOSFET).png)<br>Option 2.<br> IRLZ44NPBF <br> $1.53/each <br> [Link to product](https://www.digikey.com/en/products/detail/infineon-technologies/IRLZ44NPBF/811808)                                             |
+| **Voltage Regulator**          | ![](LM7805(Regulator).png)<br>Option 1.<br> LM7805 Linear Voltage Regulator<br>$0.33/each<br>[link to product](https://www.digikey.com/en/products/detail/taejin/lm7805t/22237260)                                             |
+
+## **MCC Configuration Table**
+
+This table shows the MCC pin setup inside MPLAB X IDE software used to program the microcontroller.
+
+![MCC Pin Setup](DistanceSensingSubsystemMCCPins.png)
