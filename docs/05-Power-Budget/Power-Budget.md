@@ -9,7 +9,7 @@ This page shows the power budget for the major components involved in the circui
 ## Power Budget
 
 ![Power Budget](EGR%20304%20Team%20103%20Individual%20Power%20Budget.png)
-
+***Note:*** *The PIN Photodiode has been purposefully omitted from the power budget as it does not draw any current from the power supply when functioning as intended. Intended functionality causes it to produce current by absorbing photons. Furthermore, any current that could be drawn by it would be insignificant (on the order of nanoamps to microamps).*
 
 ## Conclusions
 
