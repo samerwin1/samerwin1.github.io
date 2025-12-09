@@ -1,0 +1,9 @@
+---
+title: Hardware V2.0
+---
+
+Due to the business office missing my order originally and not catching it until late in the project, I did not receive my hardware components until the course was basically over. I did not get the chance to solder them onto my PCB and test them with my code/the other subsystems. Therefore, I cannot truly say whether my chosen hardware would have been effective or not. In the end I used components that were similar and available to me in order to test my subsystem. To see the block diagram and schematic using these substituted components, visit the ["Appendix" page.](https://samerwin1.github.io/Appendix/)
+
+Since I did not get the chance to test my chosen hardware, it is difficult to decide what I would change if I had the opportunity to improve my design in the future. However there is one thing I would consider: the sensors themselves.
+
+Due to the nature of the course/project, we were asked to choose simple analog sensors that had no internal processing/filtering. This meant that my options for distance-sensing were limited to raw emitter/detector pairs, which is why I chose the IR emitter and photodiode that I did. If I were to improve upon this design I would likely choose an ultrasonic or ToF sensor that is specialized for detecting objects more reliably at longer distances. This would increase safety and effectiveness and be a better option for a real product to bring to market rather than a course project. It would also be easier to work with and more reliable; during testing with my subsystem I had issues with one photodiode giving no readings due to an imperfect connection somewhere in the mess of reference/feedback resistors on the breadboard.
